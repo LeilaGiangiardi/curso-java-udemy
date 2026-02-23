@@ -1,0 +1,20 @@
+# Arquivos compilados de Java (o resultado do seu código)
+*.class
+
+# Pastas onde o VS Code e o Java guardam os binários
+bin/
+target/
+
+# Configurações locais da IDE (não devem ir para o GitHub)
+.vscode/
+.settings/
+.classpath
+.project
+
+# Arquivos do Sistema Operacional
+Thumbs.db
+.DS_Store
+
+# Arquivos temporários
+*.log
+*.tmp
