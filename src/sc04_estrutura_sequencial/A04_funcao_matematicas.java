@@ -1,4 +1,4 @@
-package src.secao04;
+package src.sc04_estrutura_sequencial;
 
 public class A04_funcao_matematicas {
     public static void main(String[] args) {
