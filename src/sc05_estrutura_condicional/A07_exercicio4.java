@@ -2,7 +2,7 @@ package src.sc05_estrutura_condicional;
 
 import java.util.Scanner;
 
-public class A07_exercicio {
+public class A07_exercicio4 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
