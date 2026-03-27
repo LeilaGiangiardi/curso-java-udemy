@@ -10,6 +10,9 @@ Este módulo aborda a lógica de decisão em Java, permitindo que o programa exe
 * **Expressões Lógicas:** Uso de operadores como AND (&&), OR (||) e NOT (!) para construir condições compostas.
 * **Estrutura If-Else:** Controle de fluxo básico para execução de blocos de código baseados em condições verdadeiras ou falsas.
 * **Estrutura Encadeada:** Verificação de múltiplas condições sequenciais através do uso de `else if`.
+* **Operadores de Atribuição Cumulativa:** Sintaxe simplificada para atualização de variáveis (ex: `+=`, `-=`).
+* **Estrutura Switch-Case:** Alternativa para seleções baseadas em valores fixos.
+* **Expressão Condicional Ternária:** Decisões e atribuições em uma única linha de código.
 
 ---
 
@@ -19,6 +22,9 @@ Este módulo aborda a lógica de decisão em Java, permitindo que o programa exe
 * **`A01_expressoes_comparativas.java`**: Estudo prático de operadores relacionais e comparações.
 * **`A02_expressoes_logicas.java`**: Exemplos de lógica booleana e conectivos lógicos.
 * **`A03_if_else.java`**: Implementação básica e sintaxe da estrutura condicional.
+* **`A12_OperadoresAtribuicaoCumulativa.java`**: Simplificação de cálculos acumulativos.
+* **`A13_SwitchCase.java`**: Implementação de menus e seleções múltiplas.
+* **`A14_ExpressaoCondicionalTernaria.java`**: Uso da sintaxe simplificada de decisão.
 
 ---
 
