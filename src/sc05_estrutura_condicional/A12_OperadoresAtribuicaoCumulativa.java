@@ -6,7 +6,17 @@ import java.util.Scanner;
 public class A12_OperadoresAtribuicaoCumulativa {
 
     public static void main(String[] args) {
-        
+
+        /*TABELA DE REFERÊNCIA: OPERADORES DE ATRIBUIÇÃO CUMULATIVA
+         * -------------------------------------------------------
+         * a += b;  ->  a = a + b;
+         * a -= b;  ->  a = a - b;
+         * a *= b;  ->  a = a * b;
+         * a /= b;  ->  a = a / b;
+         * a %= b;  ->  a = a % b;
+         * -------------------------------------------------------
+         */
+
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
