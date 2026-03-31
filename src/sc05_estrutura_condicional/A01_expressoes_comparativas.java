@@ -1,4 +1,4 @@
-package src.sc05_estrutura_condicional;
+package sc05_estrutura_condicional;
 
 public class A01_expressoes_comparativas {
 

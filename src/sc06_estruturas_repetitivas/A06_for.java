@@ -18,6 +18,8 @@ public class A06_for {
     
             }
             System.out.printf("Resultado da soma entre os %d valores: %d:", N, soma);
+
+            sc.close();
     }
 }
 

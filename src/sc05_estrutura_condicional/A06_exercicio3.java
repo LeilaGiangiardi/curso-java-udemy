@@ -1,4 +1,4 @@
-package src.sc05_estrutura_condicional;
+package sc05_estrutura_condicional;
 import java.util.Scanner;
 
 public class A06_exercicio3 {
