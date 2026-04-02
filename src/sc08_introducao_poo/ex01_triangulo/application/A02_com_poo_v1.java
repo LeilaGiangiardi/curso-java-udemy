@@ -28,13 +28,11 @@ public class A02_com_poo_v1 {
         y.b = sc.nextDouble();
         y.c = sc.nextDouble();
 
-        // Cálculo da área do triângulo X usando os atributos do objeto
-        double p = (x.a + x.b + x.c) / 2.0;
-        double areaX = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
+        // Chamada do método (Reaproveitamento)
+        double areaX = x.area();
 
-        // Cálculo da área do triângulo Y
-        p = (y.a + y.b + y.c) / 2.0;
-        double areaY = Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
+        // Chamada do método (Reaproveitamento)    
+        double areaY = y.area();
 
         System.out.printf("Triangle X area: %.4f%n", areaX);
         System.out.printf("Triangle Y area: %.4f%n", areaY);
