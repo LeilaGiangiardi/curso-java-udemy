@@ -1,4 +1,4 @@
-package sc08_introducao_poo.ex01_triangulo;
+package sc08_introducao_poo.ex01_triangulo.application;
 
 import java.util.Locale;
 import java.util.Scanner;
