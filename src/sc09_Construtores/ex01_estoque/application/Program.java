@@ -20,16 +20,12 @@ public class Program {
         // Exemplo usando a SOBRECARGA (Sem quantidade inicial)
         Produto produto = new Produto(nome, preco);
 
-        System.out.println();
-        System.out.println("Dados do produto (Estoque inicial zero): " + produto);
+        // Exemplo de uso do SET e GET
+        produto.setNome("Computador"); // Alterando o nome via encapsulamento
+        System.out.println("Nome atualizado: " + produto.getNome());
 
         System.out.println();
-        System.out.print("Digite o número de produtos a serem adicionados ao estoque: ");
-        int quantidade = sc.nextInt();
-        produto.adicionarProdutos(quantidade);
-
-        System.out.println();
-        System.out.println("Dados atualizados: " + produto);
+        System.out.println("Dados do produto: " + produto);
 
         sc.close();
     }

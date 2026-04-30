@@ -2,9 +2,10 @@ package sc09_construtores.ex01_estoque.entities;
 
 public class Produto {
 
-    public String nome;
-    public double preco;
-    public int quantidade;
+    // Atributos agora são PRIVADOS para garantir o encapsulamento
+    private String nome;
+    private double preco;
+    private int quantidade;
 
     // 1. CONSTRUTOR PADRÃO
     // Permite criar o objeto vazio: new Produto()
@@ -25,6 +26,33 @@ public class Produto {
         this.preco = preco;
         //this.quantidade = 0; // Opcional, Java já inicia int com 0
     }
+
+    // --- MÉTODOS GETTERS E SETTERS ---
+    // Gerados automaticamente no VS Code (Source Action > Generate Getters and Setters)
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
+    // Apenas o GET para quantidade. 
+    // A alteração deve ser feita apenas pelos métodos adicionar/remover.
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    // --- MÉTODOS DE REGRA DE NEGÓCIO ---
 
     public double valorTotalEmEstoque() {
         return preco * quantidade;
