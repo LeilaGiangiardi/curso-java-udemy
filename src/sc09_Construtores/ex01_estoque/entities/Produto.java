@@ -6,11 +6,24 @@ public class Produto {
     public double preco;
     public int quantidade;
 
-    // CONSTRUTOR (Seção 9): Obriga a passagem de dados na criação do objeto
+    // 1. CONSTRUTOR PADRÃO
+    // Permite criar o objeto vazio: new Produto()
+    public Produto() {
+    }
+
+    // 2. CONSTRUTOR COMPLETO
     public Produto(String nome, double preco, int quantidade) {
         this.nome = nome;
         this.preco = preco;
         this.quantidade = quantidade;
+    }
+
+    // 3. SOBRECARGA: Construtor sem a quantidade
+    // Útil quando o produto inicia com estoque zero por padrão
+    public Produto(String nome, double preco) {
+        this.nome = nome;
+        this.preco = preco;
+        //this.quantidade = 0; // Opcional, Java já inicia int com 0
     }
 
     public double valorTotalEmEstoque() {
@@ -25,7 +38,6 @@ public class Produto {
         this.quantidade -= quantidade;
     }
 
-    // Formatação da saída de dados
     public String toString() {
         return nome 
             + ", R$ " 
