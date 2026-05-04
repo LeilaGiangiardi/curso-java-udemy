@@ -1,8 +1,8 @@
-package sc09_construtores.ex01_estoque.application;
+package sc09_Construtores.ex01_estoque.application;
 
 import java.util.Locale;
 import java.util.Scanner;
-import sc09_construtores.ex01_estoque.entities.Produto;
+import sc09_Construtores.ex01_estoque.entities.Produto;
 
 public class Program {
 

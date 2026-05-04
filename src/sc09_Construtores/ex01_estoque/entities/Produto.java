@@ -1,4 +1,4 @@
-package sc09_construtores.ex01_estoque.entities;
+package sc09_Construtores.ex01_estoque.entities;
 
 public class Produto {
 
