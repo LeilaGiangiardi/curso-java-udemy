@@ -1,4 +1,4 @@
-package sc10_arrays_listas.ex01_vetores.applcation;
+package sc10_arrays_listas.ex01_vetores.application;
 
 import java.util.Locale;
 import java.util.Scanner;
