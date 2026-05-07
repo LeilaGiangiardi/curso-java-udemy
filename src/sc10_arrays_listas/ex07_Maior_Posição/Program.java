@@ -1,4 +1,4 @@
-package sc10_arrays_listas.ex07;
+package sc10_arrays_listas.ex07_Maior_Posição;
 
 import java.util.Locale;
 import java.util.Scanner;
