@@ -22,6 +22,6 @@ Abaixo estão todos os exercícios e tópicos de estudo desenvolvidos nesta seç
 * **`ex14_listas`**: Introdução a coleções dinâmicas (`List` e `ArrayList`). Métodos de inserção, remoção (`.removeIf()`) e Expressões Lambda.
 * **`ex15_listasPT2`**: Exercício prático (Gestão de Funcionários). Utilização do pipeline de *Streams* com Expressão Lambda para buscar e validar IDs com segurança e aplicar encapsulamento na alteração de salários.
 * **`ex16_matrizes`**: Estudo de arrays bidimensionais (`[][]`), manipulando dados em grade com laços `for` aninhados, varredura da diagonal principal e contagem de valores negativos.
+* **`ex17_matrizesPT2`**: Exercício focado na busca de um elemento específico em uma matriz e impressão controlada de seus vizinhos adjacentes (esquerda, direita, acima e abaixo) contornando limites de índices.
 
 ---
-*Anotações e exercícios práticos baseados no Curso de Java Completo - Programação Orientada a Objetos.*
