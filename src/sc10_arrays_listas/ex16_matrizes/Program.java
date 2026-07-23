@@ -1,4 +1,4 @@
-package sc10_arrays_listas.matrizes;
+package sc10_arrays_listas.ex16_matrizes;
 
 import java.util.Scanner;
 
