@@ -46,20 +46,3 @@ O projeto é dividido em pastas que representam as seções do curso. Cada pasta
 * **`sc25_interface_grafica_javafx`**: Desktop (Legado Java 11).
 
 ---
-
-## 🚀 Como Executar
-Para rodar os exercícios deste projeto em sua máquina local, siga os passos abaixo:
-
-### 1. Pré-requisitos
-Certifique-se de ter instalado em sua máquina:
-* **JDK 25 ou superior**: Verifique com o comando `java --version` no terminal.
-* **VS Code**: Com o pacote de extensões **Extension Pack for Java** instalado.
-* **Git**: Para clonagem e versionamento.
-
-### 2. Clonagem do Repositório
-Abra o terminal (Git Bash recomendado) e execute:
-# Clone o repositório utilizando SSH
-git clone git@github.com:LeilaGiangiardi/curso-java-udemy.git
-
-# Entre na pasta do projeto
-cd curso-java-udemy
