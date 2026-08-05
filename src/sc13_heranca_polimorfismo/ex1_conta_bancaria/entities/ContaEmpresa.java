@@ -1,4 +1,4 @@
-package sc13_heranca_polimorfismo.heranca_conceito.entities;
+package sc13_heranca_polimorfismo.ex1_conta_bancaria.entities;
 
 public class ContaEmpresa extends Conta{
     private Double LimiteEmprestimo;
@@ -7,8 +7,8 @@ public class ContaEmpresa extends Conta{
         super();
     }
 
-    public ContaEmpresa(Integer number, String titular, Double saldo, Double limiteEmprestimo) {
-        super(number, titular, saldo);
+    public ContaEmpresa(Integer numero, String titular, Double saldo, Double limiteEmprestimo) {
+        super(numero, titular, saldo);
         LimiteEmprestimo = limiteEmprestimo;
     }
 
@@ -20,7 +20,7 @@ public class ContaEmpresa extends Conta{
         LimiteEmprestimo = limiteEmprestimo;
     }
     
-    public void limite(double quantia){
+    public void emprestimo(double quantia){
         if (quantia <= LimiteEmprestimo){
             saldo += quantia - 10.0;
         }

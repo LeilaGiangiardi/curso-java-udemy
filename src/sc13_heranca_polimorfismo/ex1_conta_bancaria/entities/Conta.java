@@ -1,25 +1,25 @@
-package sc13_heranca_polimorfismo.heranca_conceito.entities;
+package sc13_heranca_polimorfismo.ex1_conta_bancaria.entities;
 
 public class Conta {
-    private Integer number;
+    private Integer numero;
     private String titular;
     protected Double saldo;
     
     public Conta() {
     }
 
-    public Conta(Integer number, String titular, Double saldo) {
-        this.number = number;
+    public Conta(Integer numero, String titular, Double saldo) {
+        this.numero = numero;
         this.titular = titular;
         this.saldo = saldo;
     }
 
-    public Integer getNumber() {
-        return number;
+    public Integer getNumero() {
+        return numero;
     }
 
-    public void setNumber(Integer number) {
-        this.number = number;
+    public void setNumero(Integer numero) {
+        this.numero = numero;
     }
 
     public String getTitular() {
