@@ -1,6 +1,7 @@
 package sc13_heranca_polimorfismo.ex1_conta_bancaria.application;
 
 import sc13_heranca_polimorfismo.ex1_conta_bancaria.entities.Conta;
+import sc13_heranca_polimorfismo.ex1_conta_bancaria.entities.ContaEmpresa;
 import sc13_heranca_polimorfismo.ex1_conta_bancaria.entities.ContaPoupanca;
 
 public class Program2 {
@@ -13,5 +14,10 @@ public class Program2 {
         Conta conta2 = new ContaPoupanca(1002, "Maria", 1000.0, 0.01);
         conta2.saque(200.0);
         System.out.println(conta2.getSaldo());
+    
+        Conta conta3 = new ContaEmpresa(1003, "Bob", 1000.0, 500.0);
+        conta3.saque(200.0);
+        System.out.println(conta3.getSaldo());
+    
     }
 }
