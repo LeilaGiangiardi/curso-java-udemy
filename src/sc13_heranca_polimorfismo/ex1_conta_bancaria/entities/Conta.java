@@ -35,7 +35,7 @@ public class Conta {
     }
 
     public void saque(Double quantia) {
-        saldo -= quantia;
+        saldo -= quantia + 5.0; //adicionando taxa de 5
     }
 
     public void depositar (Double quantia){

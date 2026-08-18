@@ -24,5 +24,10 @@ public class ContaPoupanca extends Conta{
         saldo += saldo*taxaDeJuros;
     }
     
+    @Override //procura o metodo na superclasse
+    public void saque(Double quantia){
+        saldo -= quantia; // Sem a taxa de 5.0
+    }
+    
     
 }
