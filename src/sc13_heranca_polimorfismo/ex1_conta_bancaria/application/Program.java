@@ -1,10 +1,10 @@
-package sc13_heranca_polimorfismo.ex1_conta_bancaria.application;
+/*package sc13_heranca_polimorfismo.ex1_conta_bancaria.application;
 
 import sc13_heranca_polimorfismo.ex1_conta_bancaria.entities.Conta;
 import sc13_heranca_polimorfismo.ex1_conta_bancaria.entities.ContaEmpresa;
 import sc13_heranca_polimorfismo.ex1_conta_bancaria.entities.ContaPoupanca;
 
-/*public class Program {
+public class Program {
     public static void main(String[] args) {
         
         Conta conta1 = new Conta(1001, "Alex", 0.0);

@@ -1,4 +1,4 @@
-package sc13_heranca_polimorfismo.ex1_conta_bancaria.application;
+/*package sc13_heranca_polimorfismo.ex1_conta_bancaria.application;
 
 import sc13_heranca_polimorfismo.ex1_conta_bancaria.entities.Conta;
 import sc13_heranca_polimorfismo.ex1_conta_bancaria.entities.ContaEmpresa;
@@ -21,3 +21,4 @@ public class Program2 {
     
     }
 }
+*/

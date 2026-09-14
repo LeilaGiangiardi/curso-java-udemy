@@ -1,6 +1,6 @@
 package sc13_heranca_polimorfismo.ex1_conta_bancaria.entities;
 
-public class Conta {
+public abstract class Conta {
     private Integer numero;
     private String titular;
     protected Double saldo;
