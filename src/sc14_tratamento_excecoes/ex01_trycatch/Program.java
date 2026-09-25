@@ -5,33 +5,40 @@ import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args) {
-        
+        // 1. a pilha de execução começa aqui no main
+        method1();
+        System.out.println("Fim do programa");
+    }
+
+    public static void method1() {
+        System.out.println("***METHOD1 START***");
+        // 2. o main chamou o method1, que agora chama o method2 (empilhando a execução)
+        method2();
+        System.out.println("***METHOD1 END***");
+    }
+
+    public static void method2() {
+        System.out.println("***METHOD2 START***");
         Scanner sc = new Scanner(System.in);
-
-        // O bloco 'try' (tentar) guarda o código que tem "risco" de dar erro.
+        
         try {
-            System.out.println("Digite alguns nomes separados por espaço:");
-            String[] vetor = sc.nextLine().split(" "); // Ex: Maria Joao Alex
+            String[] vect = sc.nextLine().split(" ");
+            int position = sc.nextInt();
+            System.out.println(vect[position]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("posição inválida!");
             
-            System.out.print("Digite a posição (índice) do nome que deseja ver: ");
-            int posicao = sc.nextInt();
+            // 3. e.printStackTrace() imprime a famosa "pilha de chamadas" (stack trace).
+            // se der erro, ele mostra o rastro exato do problema em vermelho no console:
+            // onde estourou (method2) <- quem chamou (method1) <- onde começou (main)
+            e.printStackTrace();
             
-            System.out.println("Nome escolhido: " + vetor[posicao]);
-        } 
-        // O bloco 'catch' (capturar) "pega" o erro no ar antes que ele quebre o programa.
-        catch (ArrayIndexOutOfBoundsException e) {
-            // Este erro ocorre se o usuário digitar uma posição que não existe no vetor (ex: posição 10 num vetor de 3)
-            System.out.println("Erro: Posição inválida no vetor!");
-        } 
-        catch (InputMismatchException e) {
-            // Este erro ocorre se o usuário digitar uma letra quando o programa espera um número (nextInt)
-            System.out.println("Erro: Você deve digitar um número inteiro para a posição!");
+            sc.next();
+        } catch (InputMismatchException e) {
+            System.out.println("erro de entrada");
         }
-
-
-        // continua a execução normalmente até o final
-        System.out.println("O programa continuou rodando até o fim com sucesso!");
-
+        
         sc.close();
+        System.out.println("***METHOD2 END***");
     }
 }
