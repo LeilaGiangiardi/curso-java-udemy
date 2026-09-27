@@ -9,13 +9,11 @@ public class Program {
         
         String diretorio = "C:\\Users\\leila\\Desktop\\curso-java-udemy\\src\\sc15_arquivos\\ex02_FileReader_BufferReader\\texto_exemplo2.txt";
         
-        FileReader fr1 = null;
-        BufferedReader br1 = null;
-
-        try {
-            // instancia os leitores apontando para o diretorio
-            fr1 = new FileReader(diretorio);
-            br1 = new BufferedReader(fr1);
+        // try-with-resources
+        // ao instanciar os leitores dentro dos parênteses do try, o java fecha
+        // automaticamente o bufferedReader e o fileReader no final da execução,
+        // eliminando completamente a necessidade de escrever o bloco finally manual.
+        try (BufferedReader br1 = new BufferedReader(new FileReader(diretorio))) {
             
             // le a primeira linha do arquivo
             String linha = br1.readLine(); 
@@ -28,20 +26,6 @@ public class Program {
         } 
         catch (IOException e) {
             System.out.println("Erro: " + e.getMessage());
-        }
-        finally {
-            // bloco padrao e manual para fechar os recursos (sera otimizado na prox aula)
-            try {
-                if (br1 != null) {
-                    br1.close();
-                }
-                if (fr1 != null) {
-                    fr1.close();
-                }
-            } 
-            catch (IOException e) {
-                e.printStackTrace();
-            }
         }
     }
 }
